@@ -1,8 +1,9 @@
 ---
-- hosts: 
+- hosts:44.193.211.43   
   become: true
   tasks:
    - name: copy war file to server
-     copy: 
-       src:
-       dest:
+     copy:
+              src:/target/webapp.war
+              dest:/opt/apache-tomcat-9.0.60/rrr
+...     
