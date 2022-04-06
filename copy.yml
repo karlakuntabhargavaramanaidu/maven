@@ -1,1 +1,8 @@
-
+---
+- hosts: 
+  become: true
+  tasks:
+   - name: copy war file to server
+     copy: 
+       src:
+       dest:
