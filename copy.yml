@@ -4,6 +4,6 @@
   tasks:
    - name: copy war file to server
      copy:
-              src: /target/webapp.war
+              src: /var/lib/jenkins/workspace/ansible pipeline/webapp/target/webapp.war
               dest: /opt/apache-tomcat-9.0.60/rrr
 ...     
