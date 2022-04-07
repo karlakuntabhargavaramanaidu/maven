@@ -28,9 +28,7 @@ pipeline
         {
             steps
             {
-                mail bcc: '', body: '''Hi bhargavaram Welcome to email jenkins alerts
-                Thanks
-                bhargavaram''', cc: '', from: '', replyTo: '', subject: 'jenkins job status', to: 'kbrn1797@gmail.com'
+                mail bcc: '', body: '$PROJECT_NAME - Build # $BUILD_NUMBER - $BUILD_STATUS:', cc: '', from: '', replyTo: '', subject: 'jenkins status', to: 'kbrn1797@gmail.com'
             }
         }
     }
