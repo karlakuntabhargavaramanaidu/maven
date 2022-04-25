@@ -1,5 +1,5 @@
 ---
-- hosts: 54.226.69.71  
+- hosts: 3.236.165.40  
   become: true
   tasks:
    - name: copy war file to server
